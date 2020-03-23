@@ -1,0 +1,22 @@
+DOCUMENTAZIONE
+
+1. La state machine del player comprende gli stati: fermo, camminata, corsa, mira, abbassarsi 
+2. i comandi di movimento sono: -(WASD) per il movimento e il mouse per girare la telecamera,
+                                -Doppio click sulla W da fermo per la corsa
+                                -con la X ci si abbassa e poi lo puoi ricliccare per rialzarti
+
+3. la state machine dell'arma comprende gli stati: Non Equipaggiata, equipaggiata, e ricarica
+4.i comandi per l'azione sono: -Tasto E per equipaggiare/disequipaggiare l'arma
+                               -tasto destro del mouse quando l'arma è equipaggiata per mirare
+                               -tasto sinistro del mouse quando l'arma è equipaggiata per sparare
+                               -tasto R si ricarica se hai l'arma equipaggiata
+
+5.ogni volta che cambi stato viene mostrato anche nella console lo stato in cui sei 
+
+
+BUG REPORTATI: Bisogna iniziare nella scena di gameplay non in quella di main menu,
+perchè se no il gioco si bugga nella transizione tra il main menu e il gameplay,
+perchè gli stati della scena di gameplay non si attivano perchè ci sono problemi
+con le referenze al setup degli script.
+   
+
